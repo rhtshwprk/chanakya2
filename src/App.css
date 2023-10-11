@@ -1,0 +1,556 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* .App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+ */
+ *{
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  /* background-color: black; */
+  /* background-image: url("https://images.unsplash.com/photo-1660310447631-0f965dc1caf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+html , body {
+  height: 100%;
+  width: 100%;
+}
+.sectionWrap{
+  max-width:850px; 
+  width:100%; 
+  margin:0 auto;
+}
+.midWrap{
+  background:#fff; 
+  padding:20px; 
+  height:320px;
+  margin-top:150px;
+}
+.Login{
+  margin-bottom:5px!important;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+.secLeft{
+  width:46%;
+  border-right:1px solid #ccc; 
+  padding-right:3%; 
+  float:left;
+}
+.secLeft img{
+  height: 300px;
+  width: 380px;
+  margin-top: 10px;
+}
+.secRight{
+  width:47%; 
+  margin-left:0%; 
+  float:right;
+}
+
+.button_send button{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  /* background-color: #0d9df2; */
+}
+
+.register_button button{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.forgot_pwd{
+  margin-top: 15px;
+  color: black;
+}
+
+#username{
+margin-left: 31px;
+}
+
+#password{
+margin-left: 11px;
+}
+
+#name{
+margin-left: 5px;
+}
+
+.heading_style{
+  text-transform: uppercase;
+  margin-left: 320px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.midWrap {
+  margin-top: 10px; /* Adjust margin for smaller screens */
+}
+
+.secLeft img {
+  height: auto; /* Auto-adjust image height */
+  width: 100%; /* Make image responsive */
+  margin-top: 10px;
+}
+}
+
+
+.divider_color{
+background-color: #584d9f;
+}
+
+
+.css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper {
+box-sizing: border-box;
+width: 240px;
+background-color: #584d9f;
+}
+
+
+.css-1v5u2yv {
+width: calc(100% - 240px);
+background-color: white;
+}
+
+.css-1o5pq7n {
+width: 240px;
+-webkit-flex-shrink: 0;
+-ms-flex-negative: 0;
+flex-shrink: 0;
+background-color: white;
+}
+
+
+
+/* calender css */
+
+.calendar-container {
+  max-width: 350px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the calendar horizontally */
+  padding: 20px;
+  margin-top: 200px;
+  margin-right: 0px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar header styles */
+.react-calendar__navigation {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Calendar navigation button styles */
+.react-calendar_navigation_label,
+.react-calendar_navigation_arrow {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Calendar navigation button hover effect */
+.react-calendar_navigation_arrow:enabled:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Calendar tile styles */
+.react-calendar__tile {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Calendar tile hover effect */
+.react-calendar__tile:enabled:hover {
+  background-color: #e5e5e5;
+}
+
+/* Selected date styles */
+.react-calendar__tile--active {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* Calendar footer styles (neighboring month/year dates) */
+.react-calendar_month-viewdays_day--neighboringMonth,
+.react-calendar_year-viewmonths_month--neighboringYear {
+  color: #ccc;
+}
+
+/* Custom styles for specific dates (if needed) */
+.react-calendar__tile--specificDate {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+/* Add any additional styles as needed */
+
+/* ... (previous CSS styles) */
+
+/* Style the calendar container */
+.calendar-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-sizing: content-box;
+  height:fit-content;
+  /* Add spacing between calendar and dashboard content */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and content on small screens */
+  }
+  
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on small screens */
+    box-shadow: none; /* Remove the sidebar shadow on small screens */
+  }
+}
+
+/* Charts and Reports css*/
+.heading_size{
+  font-size: 46px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 50%;
+  border: 1px black solid;
+}
+
+th, td {
+  padding: 1px; */
+/* } */
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* .table_div{
+  float:right;
+  margin-top: -250px;
+  margin-right: 250px;
+} */
+
+.App{
+  margin-left: 500px;
+}
+
+.table-wrapper{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  font-size: 20px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .fl-table {
+    display: block;
+    width: 100%;
+  }
+  .table-wrapper:before{
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .fl-table thead, .fl-table tbody, .fl-table thead th {
+    display: block;
+  }
+  .fl-table thead th:last-child{
+    border-bottom: none;
+  }
+  .fl-table thead {
+    float: left;
+  }
+  .fl-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .fl-table td, .fl-table th {
+    padding: 20px .625em .625em .625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+    display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .fl-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+    background: #F8F8F8;
+    border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tr td:nth-child(even) {
+    border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+}
+
+.navbar {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the navbar */
+  margin-left: -500px;
+
+}
+
+.container {
+  display: flex;
+  flex: 1; /* Expand container to fill available space */
+  background-color: 	white;
+  margin-top: -200px;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: -500px;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.2); /* Add a shadow to the sidebar */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size for menu items */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #f4f4f4; /* Add a light background color to the content area */
+  border-left: 1px solid #ddd; /* Add a subtle border to separate content from sidebar */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+/* Style the calendar container */
+.calendar-container {
+  flex: 1; /* Make the calendar container take up available space */
+  margin-right: 20px; /* Add spacing between calendar and graph */
+}
+
+/* Style the graph container */
+.graph-container {
+  flex: 1; /* Make the graph container take up available space */
+}
+
+/* Style the graph heading */
+.graph-container h2 {
+  margin-top: 0; /* Remove top margin from the graph heading */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and content on small screens */
+  }
+  
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on small screens */
+  }
+}
