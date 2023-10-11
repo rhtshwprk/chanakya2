@@ -1,4 +1,4 @@
-**College_Management**
+**College Management System**
 
 We have developed a college management system using React JS. It has the following functionalities:
 1. Login and sign up with dummy authentication
