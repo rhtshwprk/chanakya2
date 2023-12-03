@@ -6,6 +6,7 @@ import { details as userDetails } from './data/details'
 export const Login = (props) => {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')
+  console.log(props)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -30,12 +31,13 @@ export const Login = (props) => {
       // Create an object with the data
       const userData = {
         username: username,
-        password: password
+        password: password,
+        type: ''
       }
 
       // Convert the object to JSON and store it in local storage
       localStorage.setItem('userData', JSON.stringify(userData))
-
+      // setUser(userData)
       // Log a message to indicate the data has been stored
       console.log('Data stored in local storage.')
 
@@ -112,27 +114,6 @@ export const Login = (props) => {
                     </p>
 
                     <br></br>
-                    <div className="role">
-                      <br></br>
-                      <br></br>
-                      <br></br>
-                      <strong>Select your role</strong>&nbsp;&nbsp;
-                      <input
-                        type="radio"
-                        id="html"
-                        name="role_radio"
-                        value="Student"
-                      />
-                      <label>Student</label>&nbsp;&nbsp;
-                      <input
-                        type="radio"
-                        id="html1"
-                        name="role_radio"
-                        value="Teacher"
-                      />
-                      <label>Teacher</label>
-                      <br></br>
-                    </div>
 
                     <div className="button_send">
                       <button type="button" onClick={addData}>

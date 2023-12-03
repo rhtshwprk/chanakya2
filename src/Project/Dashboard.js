@@ -33,7 +33,8 @@ const Dashboard = (props) => {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen)
   }
-
+  const userData = localStorage.getItem('userData')
+  console.log(userData)
   const drawer = (
     <div>
       <Toolbar className="divider_color" />
@@ -77,7 +78,7 @@ const Dashboard = (props) => {
           </ListItemButton>
         </ListItem>
 
-        <ListItem disablePadding className="divider_color">
+        {/* <ListItem disablePadding className="divider_color">
           <ListItemButton>
             <ListItemIcon>
               <SchoolIcon className="icon_color" />
@@ -94,7 +95,7 @@ const Dashboard = (props) => {
               </a>
             </ListItemText>
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
 
         <ListItem disablePadding className="divider_color">
           <ListItemButton>
@@ -103,13 +104,13 @@ const Dashboard = (props) => {
             </ListItemIcon>
             <ListItemText>
               <a
-                href="/Announce"
+                href="/gradecard"
                 style={{
                   textDecoration: 'none',
                   color: 'white',
                   fontSize: '23px'
                 }}>
-                Uploads
+                Grade Card
               </a>
             </ListItemText>
           </ListItemButton>
@@ -129,7 +130,7 @@ const Dashboard = (props) => {
                   color: 'white',
                   fontSize: '23px'
                 }}>
-                Search & filter
+                Faculty Data
               </a>
             </ListItemText>
           </ListItemButton>

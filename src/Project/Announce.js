@@ -1,41 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function Announce() {
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(null)
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setSelectedFile(file);
-  };
+    const file = e.target.files[0]
+    setSelectedFile(file)
+  }
 
   const handleUpload = () => {
     if (selectedFile) {
-      const storageKey = `uploaded_${Date.now()}_${selectedFile.name}`;
-      localStorage.setItem(storageKey, JSON.stringify(selectedFile));
-      alert('File uploaded successfully!');
-      
+      const storageKey = `uploaded_${Date.now()}_${selectedFile.name}`
+      localStorage.setItem(storageKey, JSON.stringify(selectedFile))
+      alert('File uploaded successfully!')
+
       // Clear the selected file and reset the input field
-      setSelectedFile(null);
-      document.getElementById('fileInput').value = '';
-    } 
-    else {
-      alert('Please select a file first.');
+      setSelectedFile(null)
+      document.getElementById('fileInput').value = ''
+    } else {
+      alert('Grade Card not yet uploaded by admin')
     }
-  };
+  }
 
   return (
     <div className="file-upload-container">
-    
       <div className="file-input-container">
-        <label htmlFor="fileInput" className="label">Select a File:</label>
-        <input
+        <label htmlFor="fileInput" className="label">
+          Download Grade Card:
+        </label>
+        {/* <input
           type="file"
           id="fileInput"
           onChange={handleFileChange}
           accept=".pdf, .doc, .docx"
           className="file-input"
-        />
-        <button onClick={handleUpload} className="upload-button">Upload</button>
+        /> */}
+        <button onClick={handleUpload} className="upload-button">
+          Download
+        </button>
       </div>
       {selectedFile && (
         <div className="file-info">
@@ -44,8 +46,7 @@ function Announce() {
         </div>
       )}
     </div>
-    
-  );
+  )
 }
 
-export default Announce;
+export default Announce
