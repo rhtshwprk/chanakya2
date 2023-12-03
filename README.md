@@ -1,14 +1,11 @@
-**College Management System**
+# CHANAKYA 2.0
 
-We have developed a college management system using React JS. It has the following functionalities:
-1. Login and sign up with dummy authentication
-2. CRUD Operations
-3. Search and Filter
-4. Uploading documents
-5. Notifications using Toastify
+## Setup
 
-There are still some functionalities missing in this project. Some pages in the project are responsive. For responsiveness, we have made use of Material UI and React Bootstrap. 
+You must have NodeJS and npm installed on your system
 
-The future scope of our project is to integrate the backend into it and enable role-based access. 
+Run `npm install`
 
-Any suggestions to improve the project are appreciated.
+Run `npm start`
+
+Go to `localhost:3000` to see your site live.
